@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora JavaScritpt</h1> <br>
+    <input type="number" placeholder="a" id="n1"> ----- <input type="number" placeholder="b" id="n2"><br>
+    <input type="number" placeholder="c" id="n3"> ----- x <br>
+
+    <input type="button" value="calcular" onclick="calculo()">
+    <div id="mostrar"></div>
+
+    <script>
+        function calculo(){
+            resultado = document.getElementById('mostrar')
+            a = parseFloat(document.getElementById('n1').value);
+            b = parseFloat(document.getElementById('n2').value);
+            c = parseFloat(document.getElementById('n3').value);
+        
+            x = (b*c) / a;
+            resultado.textContent = `Resultado final: ${x}` 
+        }
+        
+    </script>
+</body
+</html>
